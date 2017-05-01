@@ -29,7 +29,7 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   output$plot <- renderPlot({
-    input$btn
+    (input$btn)
     
     Sys.sleep(2)
     plot(rnorm(50))
